@@ -33,7 +33,7 @@ export class AccessCheckComponent implements OnInit {
     if (this.password === usersPass && this.count < 3) {
       localStorage.setItem('доступ', 'дозволено');
       console.log('Ok');
-      this.messageService.add({severity:'success', summary: 'Access allow', detail: 'thanks'});
+      this.messageService.add({severity: 'success', summary: 'Access allow', detail: 'thanks'});
       this.router.navigate([`/content/skills`]);
     } else if (this.password !== usersPass && this.count < 3) {
       this.count += 1;
