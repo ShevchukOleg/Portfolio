@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { HeaderModule } from './modules/header/header.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MessageService } from 'primeng/api';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastModule
+    ToastModule,
+    HeaderModule
   ],
   providers: [MessageService,
   ],

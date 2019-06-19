@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SiteHeaderComponent } from './site-header/site-header.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [SiteHeaderComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
+  ],
+  exports: [
+    SiteHeaderComponent
   ]
 })
+
 export class HeaderModule { }
