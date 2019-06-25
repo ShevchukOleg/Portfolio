@@ -1,4 +1,108 @@
 header {
-z-index: 100;
-padding: 25px 15px;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgb(202, 234, 240);
+}
+header ul {
+  padding: 0px 10px;
+}
+
+a {
+  z-index: 10;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+  white-space: nowrap;
+  padding: 0px 10px;
+}
+
+ul li {
+  font-size: 20px;
+  text-align: center;
+}
+
+.headerInner {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mainPersonalDataWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.avatar {
+  object-fit: cover;
+  width: 20%;
+  height: auto;
+  max-height: 100%;
+  margin: 5px;
+  border-radius: 18px;
+}
+
+.personalInfo {
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.personalInfo ul {
+  margin-bottom: 0.25rem;
+}
+
+.personalInfo .simpleLink {
+  font-family: 'Courgette', sans-serif;
+  font-size: 16px;
+}
+
+/* .mainNavigation ul {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+} */
+
+
+@media (min-width: 360px) {
+  .mainPersonalDataWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+  }
+}
+
+@media (min-width: 900px) {
+  .mainPersonalDataWrapper {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .headerInner {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
 }
