@@ -1,9 +1,29 @@
 section {
-padding-top: 15px;
-padding-bottom: 70px;
+padding: 15px 0 20px 0;
+}
+
+h3 {
+  text-align: center;
 }
 
 .techIcons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  max-height: 36px;
+  overflow: hidden;
+}
+
+.pngIcon {
+  object-fit: cover;
+  max-height: 100%;
+  width: 30px;
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.techIcons .fa {
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -6,6 +6,7 @@ import { LaborActivityComponent } from './labor-activity/labor-activity.componen
 import { EducationComponent } from './education/education.component';
 import { PersonalQualitiesComponent } from './personal-qualities/personal-qualities.component';
 import { ContentRoutingModule } from './content-routing.module';
+// import { Router, ActivatedRoute } from '@angular/router';
 
 @NgModule({
   declarations: [SkillsComponent, EducationalProjectsComponent, LaborActivityComponent, EducationComponent, PersonalQualitiesComponent],
