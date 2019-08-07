@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { HeaderModule } from './modules/header/header.module';
+import { FooterComponent } from './modules/footer/footer/footer.component';
+import { FooterModule } from './modules/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { HeaderModule } from './modules/header/header.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     ToastModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [MessageService,
   ],

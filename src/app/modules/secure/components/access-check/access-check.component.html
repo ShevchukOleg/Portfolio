@@ -2,9 +2,10 @@
   <div class="container-fluid">
     <div class="row hh align-items-center justify-content-center">
       <div class="col-3">
-        <mat-card class="example-card">
+        <mat-card class="example-card form-wrapper">
             <mat-card-content>
-                <form [formGroup]="passwordForm" (ngSubmit)="getAccess()">
+                <form class="security-form" [formGroup]="passwordForm" (ngSubmit)="getAccess()">
+                    <p>Please, enter code, permited in CV:</p>
                     <mat-form-field class="w-100">
                       <input matInput placeholder="password" formControlName="password" [errorStateMatcher]="matcher">
                       <mat-error *ngIf="passwordForm.get('password').errors?.minlength && !passwordForm.get('password').errors?.required">

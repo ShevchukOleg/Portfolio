@@ -5,7 +5,10 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
-  background-color: rgb(202, 234, 240);
+  background-image: url("../../../../assets/images/header-background.jpg");
+  /* background-color: rgb(202, 234, 240); */
+  background-size: cover;
+  background-position: center;
 }
 header ul {
   padding: 0px 10px;
@@ -27,7 +30,9 @@ ul li {
   text-align: center;
 }
 
+
 .headerInner {
+  color: #ead4b2;
   width: 100%;
   max-width: 1200px;
   padding-right: 15px;

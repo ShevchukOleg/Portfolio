@@ -1,3 +1,17 @@
 .hh {
   height: 100vh;
 }
+
+.access {
+  background-image: url(../../../../../assets/images/cdd5425139561f41b8aabc52dcc9ef06.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-wrapper {
+  background-color: #31353e;
+}
+.security-form {
+  color: #cadaf1;
+}

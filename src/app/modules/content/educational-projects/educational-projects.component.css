@@ -1,0 +1,23 @@
+.skills_styler {
+  background-color: #313131;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 209px);
+}
+
+.image-wrapper {
+  overflow: hidden;
+  height: 380px;
+}
+.image-wrapper img {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(30%) contrast(110%);
+}
+
+.full_width {
+  padding-top: 20px;
+}

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, CanActivate, Router } from '@angular/router';
-import { ControAccessService } from '../global-services/contro-access.service';
+import { ControlAccessService } from '../global-services/control-access.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { ControAccessService } from '../global-services/contro-access.service';
 export class AuthGuard implements CanActivate {
 
  constructor(
-    private access: ControAccessService,
+    private access: ControlAccessService,
     private router: Router
   ) {}
 

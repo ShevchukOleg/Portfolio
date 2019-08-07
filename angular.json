@@ -29,11 +29,14 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "src/fonts/fontawesome_4.7.0/font-awesome.min.css"
+              "src/fonts/fontawesome_4.7.0/font-awesome.min.css",
+              "src/effects/OwlCarusel/owl.carousel.min.css",
+              "src/effects/OwlCarusel/owl.theme.default.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/effects/OwlCarusel/owl.carousel.min.js"
             ]
           },
           "configurations": {
