@@ -3,7 +3,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 209px);
+  height: calc(100vh - 163px);
+  padding-top:20px;
+  overflow: hidden;
 }
 
 .image-wrapper {
@@ -18,6 +20,23 @@
   filter: sepia(30%) contrast(110%);
 }
 
+.image-wrapper img[alt='Simple lending page'] {
+  background-color: #e0a607ef;
+}
+
 .full_width {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+div.full_width div.owl-carousel div.owl-nav {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #c9c5c5
+}
+
+@media (min-width: 768px) {
+  .full_width {
+    padding-top: 160px;
+  }
 }

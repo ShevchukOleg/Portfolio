@@ -18,7 +18,11 @@ export class EducationalProjectsComponent implements OnInit {
         loop: true,
         center: true,
         nav: true,
-        navElement: true,
+        navText: ["&larr;", "&rarr;"],
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 1200
 
       })
     );

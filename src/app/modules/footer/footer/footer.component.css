@@ -1,5 +1,15 @@
 .footer_decoration {
   background: rgba(47, 47, 47, 0.8);
+  box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8);
   color: #ead4b2;
   box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  width: 14%;
+  height: auto;
+  max-height: 100%;
+  margin: 0;
+  border-radius: 3px;
 }

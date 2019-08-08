@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./site-header.component.css']
 })
 export class SiteHeaderComponent implements OnInit {
-
+  public status = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public navigationChange() {
+    this.status = !this.status;
+    console.log(this.status);
   }
 
 }

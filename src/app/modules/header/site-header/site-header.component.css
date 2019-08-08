@@ -5,13 +5,16 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
-  background-image: url("../../../../assets/images/header-background.jpg");
-  /* background-color: rgb(202, 234, 240); */
-  background-size: cover;
-  background-position: center;
+  /* background-image: url("../../../../assets/images/header-background.jpg"); */
+  background-color: rgba(47, 47, 47, 0.8);
+  /* background-size: cover;
+  background-position: center; */
+  box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8)
 }
-header ul {
+header ul.main_navigation {
   padding: 0px 10px;
+  margin: 0;
+  display: none;
 }
 
 a {
@@ -28,6 +31,10 @@ h1 {
 ul li {
   font-size: 20px;
   text-align: center;
+}
+
+.merienda {
+  font-family: 'Merienda One', cursive;
 }
 
 
@@ -47,22 +54,60 @@ ul li {
   flex-wrap: wrap;
 }
 
-.mainPersonalDataWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-
+.headerInner a {
+  color: #ead4b2;
 }
 
-.avatar {
+.headerInner a:hover {
+  color: #ffc353;
+  transition: 0.4s;
+}
+
+.headerInner a:active {
+  color: #f1f8c6;
+}
+
+/* .avatar {
   object-fit: cover;
   width: 35%;
   height: auto;
   max-height: 100%;
   margin: 5px;
   border-radius: 18px;
+} */
+
+.toggle-button {
+  cursor: pointer;
+}
+
+.toggle-button-element {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ead4b2;
+  transition: 0.3s;
+}
+
+.toggle-button-element:nth-of-type(2) {
+  width: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.toggle-button:hover .toggle-button-element {
+  background-color: #ffc353;
+}
+
+.toggle-button.tb-active .toggle-button-element:nth-of-type(1) {
+  transform: translatey(8px) rotate(45deg);
+}
+
+.toggle-button.tb-active .toggle-button-element:nth-of-type(2) {
+  opacity: 0;
+}
+
+.toggle-button.tb-active .toggle-button-element:nth-of-type(3) {
+  transform: translatey(-8px) rotate(-45deg);
 }
 
 .personalInfo {
@@ -88,20 +133,9 @@ ul li {
 
 
 @media (min-width: 360px) {
-  .mainPersonalDataWrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-
-  }
 }
 
-@media (min-width: 900px) {
-  .mainPersonalDataWrapper {
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
+@media (min-width: 1024px) {
   h1 {
     font-size: 28px;
   }
@@ -110,5 +144,14 @@ ul li {
     flex-wrap: nowrap;
     flex-direction: row;
   }
+}
 
+@media (min-width: 768px) {
+  .toggle-button {
+    visibility: hidden;
+  }
+
+  header ul.main_navigation {
+    display: flex;
+    }
 }

@@ -1,28 +1,33 @@
 <header>
   <div class="headerInner">
-    <div class="mainPersonalDataWrapper">
-      <img class="avatar mr-3" src="../../../../assets/images/Ava.png" alt="Personal avatar">
-      <div class="personalInfo">
-          <h1>Shevchuk Oleg</h1>
-          <ul>
-            <li>
-              <a class="simpleLink" href="w.shevchuk.o@gmail.com">w.shevchuk.o@gmail.com</a>
-            </li>
-            <li class="text-center"><a href="https://github.com/ShevchukOleg" ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-            <li class="telNumber">
-              +38(096)544-88-36
-            </li>
-          </ul>
-      </div>
+    <div class="my-3">
+        <h1 class="text-center">Shevchuk Oleg</h1>
+        <p class="merienda text-center mt-3 mb-0">Junior front-end developer</p>
     </div>
     <nav class="my-auto mx-auto">
-      <ul class="d-flex flex-column flex-md-row mx-3  align-items-center">
+      <div class="toggle-button" (click)="navigationChange()" [ngClass]="{'tb-active': status}">
+          <span class="toggle-button-element"></span>
+          <span class="toggle-button-element"></span>
+          <span class="toggle-button-element"></span>
+      </div>
+      <ul class="main_navigation flex-column flex-md-row mx-3  align-items-center" [ngClass]="{'d-flex': status}">
         <li class="ml-3"><a routerLink="/content/skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a></li>
         <li class="ml-3"><a routerLink="/content/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
-        <li class="ml-3"><a routerLink="/content/work-experience" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Previous work experience</a></li>
+        <li class="ml-3"><a routerLink="/content/work-experience" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Outprofesional experience</a></li>
         <li class="ml-3"><a routerLink="/content/education" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Education</a></li>
         <li class="ml-3"><a routerLink="/content/personality" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Personality</a></li>
       </ul>
     </nav>
+    <div class="personalInfo">
+        <ul>
+          <li>
+            <a class="simpleLink" href="w.shevchuk.o@gmail.com">w.shevchuk.o@gmail.com</a>
+          </li>
+          <li class="text-center"><a href="https://github.com/ShevchukOleg" ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+          <li class="telNumber">
+            +38(096)544-88-36
+          </li>
+        </ul>
+    </div>
   </div>
 </header>

@@ -26,6 +26,7 @@ dl {
 .telNumber {
   text-align: center;
   font-family: 'Timmana', sans-serif;
+  font-size: 18px;
 }
 
 h2 {
@@ -43,6 +44,61 @@ article {
 .nextChapter {
   position: relative;
 }
+
+div.full_width div.owl-carousel div.owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 200px;
+  background: transparent;
+}
+
+div.full_width div.owl-carousel div.owl-nav button[type='button'] {
+  color:#e1c292;
+  font-size: 28px;
+  font-family: auto;
+  height: 50px;
+  width: 50px;
+  background: #1a1919;
+  border-radius: 8px;
+  margin: 5px;
+  outline-color: #080807;
+
+}
+
+div.full_width div.owl-carousel div.owl-nav button[type='button']:hover {
+  background: #080807;
+}
+
+div.full_width div.owl-carousel div.owl-dots {
+  position: absolute;
+  top: -70px;
+  left: 30px;
+  width: 70%;
+  height: 6px;
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+div.full_width div.owl-carousel div.owl-dots button[class='owl-dot active'] {
+  background: #af946c;
+  height: 4px;
+  width: 15%;
+  border-radius: 2px;
+  transition: 0.1s;
+  outline-color: transparent;
+ }
+
+
+div.full_width div.owl-carousel div.owl-dots button[class='owl-dot'] {
+  height: 4px;
+  width: 15%;
+  background: #e1c292;
+}
+
+
+
+
 
 @media(min-width: 740px) {
   .nextChapter{
