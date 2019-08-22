@@ -46,10 +46,7 @@ article {
 }
 
 div.full_width div.owl-carousel div.owl-nav {
-  position: absolute;
-  top: -70px;
-  right: 200px;
-  background: transparent;
+  visibility: hidden;
 }
 
 div.full_width div.owl-carousel div.owl-nav button[type='button'] {
@@ -71,13 +68,14 @@ div.full_width div.owl-carousel div.owl-nav button[type='button']:hover {
 
 div.full_width div.owl-carousel div.owl-dots {
   position: absolute;
-  top: -70px;
-  left: 30px;
-  width: 70%;
+  top: -22px;
+  left: calc(0.1*100vw);
+  width: 80%;
   height: 6px;
   display: flex;
   justify-content: space-around;
   vertical-align: middle;
+  outline-color: transparent;
 }
 
 div.full_width div.owl-carousel div.owl-dots button[class='owl-dot active'] {
@@ -105,5 +103,27 @@ div.full_width div.owl-carousel div.owl-dots button[class='owl-dot'] {
     position: absolute;
     bottom: 15px;
     right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.full_width div.owl-carousel div.owl-nav {
+    visibility: visible;
+    position: absolute;
+    top: -65px;
+    right: 60px;
+    background: transparent;
+  }
+
+  div.full_width div.owl-carousel div.owl-dots {
+    position: absolute;
+    top: -35px;
+    left: 107px;
+    width: 70%;
+    height: 6px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    outline-color: transparent;
   }
 }

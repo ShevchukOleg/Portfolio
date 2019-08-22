@@ -1,10 +1,9 @@
 .skills_styler {
   background-color: #313131;
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: calc(100vh - 163px);
-  padding-top:20px;
   overflow: hidden;
 }
 
@@ -24,6 +23,39 @@
   background-color: #e0a607ef;
 }
 
+.overlay {
+  padding: 5px 20px;;
+  color:#ead4b2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(47, 47, 47, 0.92);
+  border-radius: 3px;
+}
+
+.overlay li {
+  font-family: 'Timmana', sans-serif;
+  font-size: 17px;
+}
+
+.image-wrapper a:hover .overlay {
+  opacity: 10;
+}
+
+.text {
+  font-family: 'Merienda One', cursive;
+  margin-top: 10px;
+  color: #ead4b2;
+  font-size: 20px;
+  text-align: center;
+}
+
 .full_width {
   padding-top: 10px;
 }
@@ -37,6 +69,6 @@ div.full_width div.owl-carousel div.owl-nav {
 
 @media (min-width: 768px) {
   .full_width {
-    padding-top: 160px;
+    padding-top: 30px;
   }
 }

@@ -7,12 +7,12 @@ import { EducationComponent } from './education/education.component';
 import { PersonalQualitiesComponent } from './personal-qualities/personal-qualities.component';
 
 const routes: Routes = [
-  {path: 'skills', component: SkillsComponent },
-  {path: 'projects', component: EducationalProjectsComponent },
-  {path: 'work-experience', component: LaborActivityComponent },
-  {path: 'education', component: EducationComponent },
-  {path: 'personality', component: PersonalQualitiesComponent },
-  {path: '', component: SkillsComponent }
+  {path: 'skills', component: SkillsComponent, data: {animation: 'first'} },
+  {path: 'projects', component: EducationalProjectsComponent, data: {animation: 'second'} },
+  {path: 'work-experience', component: LaborActivityComponent, data: {animation: 'first'} },
+  {path: 'education', component: EducationComponent, data: {animation: 'second'} },
+  {path: 'personality', component: PersonalQualitiesComponent, data: {animation: 'first'} },
+  {path: '', redirectTo: 'skills', pathMatch: 'full' }
 ]
 
 @NgModule({

@@ -2,5 +2,7 @@
 <ng-container *ngIf="showHeader">
   <app-site-header></app-site-header>
 </ng-container>
-<router-outlet></router-outlet>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
 <app-footer></app-footer>
