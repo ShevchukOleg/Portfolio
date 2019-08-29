@@ -1,10 +1,14 @@
 .skills_styler {
   background-color: #313131;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  height: calc(100vh - 163px);
+  /* height: calc(100vh - 163px); */
+  height: 530px;
   overflow: hidden;
+}
+
+.skills_styler h2 {
+  color: #daa34a;
+  text-align: center;
+  margin: 35px 0 45px;
 }
 
 .image-wrapper {
@@ -26,6 +30,7 @@
 .overlay {
   padding: 5px 20px;;
   color:#ead4b2;
+  text-align: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -39,12 +44,23 @@
   border-radius: 3px;
 }
 
+.overlay ul {
+  margin-bottom: 0;
+}
+
 .overlay li {
   font-family: 'Timmana', sans-serif;
   font-size: 17px;
+  text-align: start;
 }
 
-.image-wrapper a:hover .overlay {
+.overlay a {
+  font-family: 'Courgette', sans-serif;
+  margin-top: 10px;
+  color: #5ddacf;
+}
+
+.image-wrapper:hover .overlay {
   opacity: 10;
 }
 
@@ -69,6 +85,11 @@ div.full_width div.owl-carousel div.owl-nav {
 
 @media (min-width: 768px) {
   .full_width {
+    margin-top: 10vh;
     padding-top: 30px;
+  }
+
+  .skills_styler {
+    height: calc(100vh - 150px);
   }
 }

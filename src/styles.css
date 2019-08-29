@@ -33,7 +33,7 @@ dl {
   text-align: center;
   padding: 15px;
   margin: 15px 0 10px;
-  color: #ead4b2;
+  color: #daa34a;
 }
 
 article {
@@ -43,6 +43,23 @@ article {
 
 .nextChapter {
   position: relative;
+}
+
+.nextChapter:hover a:after {
+  transition: 0.4s;
+  margin-left: 10px;
+  content: "\21D2";
+}
+
+.nextChapter a {
+  color: #daa34a;
+}
+
+.nextChapter a:hover {
+  transition: 0.4s;
+  color: #ffc353;
+  text-decoration: none;
+
 }
 
 div.full_width div.owl-carousel div.owl-nav {
@@ -68,7 +85,7 @@ div.full_width div.owl-carousel div.owl-nav button[type='button']:hover {
 
 div.full_width div.owl-carousel div.owl-dots {
   position: absolute;
-  top: -22px;
+  top: -28px;
   left: calc(0.1*100vw);
   width: 80%;
   height: 6px;
@@ -94,15 +111,10 @@ div.full_width div.owl-carousel div.owl-dots button[class='owl-dot'] {
   background: #e1c292;
 }
 
-
-
-
-
 @media(min-width: 740px) {
   .nextChapter{
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -110,14 +122,14 @@ div.full_width div.owl-carousel div.owl-dots button[class='owl-dot'] {
   div.full_width div.owl-carousel div.owl-nav {
     visibility: visible;
     position: absolute;
-    top: -65px;
+    top: -80px;
     right: 60px;
     background: transparent;
   }
 
   div.full_width div.owl-carousel div.owl-dots {
     position: absolute;
-    top: -35px;
+    top: -50px;
     left: 107px;
     width: 70%;
     height: 6px;

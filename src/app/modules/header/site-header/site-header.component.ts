@@ -15,7 +15,9 @@ export class SiteHeaderComponent implements OnInit {
 
   public navigationChange() {
     this.status = !this.status;
-    console.log(this.status);
+    setTimeout(() => {
+      this.status = false;
+    }, 6000);
   }
 
 }

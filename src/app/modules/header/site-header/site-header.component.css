@@ -1,5 +1,6 @@
 header {
   font-family: 'Lato', sans-serif;
+  color: #ead4b2;
   position: relative;
   left: 0;
   top: 0;
@@ -9,12 +10,18 @@ header {
   background-color: rgba(47, 47, 47, 0.8);
   /* background-size: cover;
   background-position: center; */
-  box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8)
+  box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8);
+  overflow: hidden;
 }
+
 header ul.main_navigation {
   padding: 0px 10px;
-  margin: 0;
   display: none;
+}
+
+h1 {
+  font-family: 'Russo One', sans-serif;
+  margin-bottom: 0;
 }
 
 a {
@@ -22,11 +29,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 22px;
-  white-space: nowrap;
-  padding: 0px 10px;
-}
+
 
 ul li {
   font-size: 20px;
@@ -37,9 +40,7 @@ ul li {
   font-family: 'Merienda One', cursive;
 }
 
-
 .headerInner {
-  color: #ead4b2;
   width: 100%;
   max-width: 1200px;
   padding-right: 15px;
@@ -54,30 +55,14 @@ ul li {
   flex-wrap: wrap;
 }
 
-.headerInner a {
-  color: #ead4b2;
-}
-
-.headerInner a:hover {
-  color: #ffc353;
-  transition: 0.4s;
-}
-
-.headerInner a:active {
-  color: #f1f8c6;
-}
-
-/* .avatar {
-  object-fit: cover;
-  width: 35%;
-  height: auto;
-  max-height: 100%;
-  margin: 5px;
-  border-radius: 18px;
-} */
-
 .toggle-button {
   cursor: pointer;
+  width: 26px;
+  margin: 10px auto;
+}
+
+.toggle-button.tb-active {
+  margin: 10px 0 0 auto ;
 }
 
 .toggle-button-element {
@@ -100,6 +85,7 @@ ul li {
 
 .toggle-button.tb-active .toggle-button-element:nth-of-type(1) {
   transform: translatey(8px) rotate(45deg);
+  background-color: #fa824a;
 }
 
 .toggle-button.tb-active .toggle-button-element:nth-of-type(2) {
@@ -108,6 +94,7 @@ ul li {
 
 .toggle-button.tb-active .toggle-button-element:nth-of-type(3) {
   transform: translatey(-8px) rotate(-45deg);
+  background-color: #fa824a;
 }
 
 .personalInfo {
@@ -125,17 +112,49 @@ ul li {
   font-size: 16px;
 }
 
-/* .mainNavigation ul {
-  display: flex;
-	justify-content: space-between;
-	align-items: center;
-} */
+/* ---------------------------New version ---------------------------------------------- */
 
+h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0px 10px;
+}
+
+.container h2.name {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container h2.name + span {
+  font-size: 12px;
+  text-align: end;
+}
+
+.container a {
+  color: #ead4b2;
+  font-size: 16px;
+
+}
+
+.container a:hover {
+  color: #ffc353;
+  transition: 0.4s;
+}
+
+.container a:active {
+  color: #f1f8c6;
+}
+/* --------------------@media----------------------------------------------------- */
 
 @media (min-width: 360px) {
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 996px) {
   h1 {
     font-size: 28px;
   }
@@ -144,14 +163,22 @@ ul li {
     flex-wrap: nowrap;
     flex-direction: row;
   }
+
+  .container h2.name {
+    text-align: end;
+    font-size: 19px;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 768px) {
   .toggle-button {
     visibility: hidden;
+    height: 0;
+    margin: 0;
   }
 
   header ul.main_navigation {
     display: flex;
-    }
+  }
 }
