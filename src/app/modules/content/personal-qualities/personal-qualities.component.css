@@ -26,6 +26,7 @@ h2:before {
   height: 200px;
   width: 160px;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .self_info {
@@ -33,6 +34,7 @@ h2:before {
   margin-bottom: 0;
   background-color: #464646;
   color: #cbb593 ;
+  border-radius: 6px;
   padding: 10px;
   letter-spacing: 0.3px;
   font-weight: 600;
@@ -152,7 +154,7 @@ h2:before {
     width: 450px;
     transform: translate(-11%, 8% );
     padding: 25px 30px 25px 60px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .exp_item {

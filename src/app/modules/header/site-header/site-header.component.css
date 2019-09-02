@@ -154,7 +154,7 @@ h1 {
 @media (min-width: 360px) {
 }
 
-@media (min-width: 996px) {
+@media (min-width: 992px) {
   h1 {
     font-size: 28px;
   }
