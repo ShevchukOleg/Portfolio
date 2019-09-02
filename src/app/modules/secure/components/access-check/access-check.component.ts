@@ -13,7 +13,7 @@ import { MessageService } from 'primeng/api';
 export class AccessCheckComponent implements OnInit {
   public passwordForm: FormGroup;
   public matcher = new MyErrorStateMatcher();
-  private password: string = environment.applicationAccess;
+  private password = environment.applicationAccess;
 
   constructor(
     private router: Router,
