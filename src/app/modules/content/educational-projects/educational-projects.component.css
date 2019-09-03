@@ -8,7 +8,7 @@
 .skills_styler h2 {
   color: #daa34a;
   text-align: center;
-  margin: 35px 0 45px;
+  margin: 45px 0 35px;
 }
 
 .image-wrapper {
@@ -85,11 +85,11 @@ div.full_width div.owl-carousel div.owl-nav {
 
 @media (min-width: 768px) {
   .full_width {
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding-top: 30px;
   }
 
   .skills_styler {
-    height: calc(100vh - 161px);
+    height: calc(100vh - 177px);
   }
 }
