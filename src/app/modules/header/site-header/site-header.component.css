@@ -6,11 +6,11 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
-  /* background-image: url("../../../../assets/images/header-background.jpg"); */
-  background-color: rgba(47, 47, 47, 0.8);
-  /* background-size: cover;
-  background-position: center; */
-  box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8);
+  background-image: url("../../../../assets/images/images/H2_compressed.jpg");
+  /* background-color: rgba(47, 47, 47, 0.8); */
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: 0 0 10px 5px rgba(104, 102, 102, 0.8); */
   overflow: hidden;
 }
 
