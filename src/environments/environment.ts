@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  applicationAccess: '284360'
+  applicationAccess: 'access'
 };
 
 /*
