@@ -30,6 +30,8 @@ h2:before {
 }
 
 .self_info {
+  position: relative;
+  z-index: 5;
   width: calc(100vw - 30px);
   margin-bottom: 0;
   background-color: #464646;
@@ -56,25 +58,32 @@ h2:before {
 
 .exp_item div[class^="job-description"] {
   border-radius: 10px;
-}
-
-.job-description-left, .job-description-right  {
   position: relative;
   background: #464646;
   padding: 12px 10px;
 }
 
+.job-description-left, .job-description-right  {
+
+}
+
 .job-description-left h4, .job-description-right h4 {
   color: #ffc353;
   font-weight: 800;
+  text-align: center;
 }
 
-.job-description-left p, .job-description-right p {
+
+div[class^="job-description"] p {
+  margin-bottom: 5px;
   color: #cbb593;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
 }
 
+div[class^="job-description"] li {
+  font-weight: 500;
+}
 
 .period {
   display: flex;
@@ -100,6 +109,7 @@ h2:before {
 .schools {
   font-family: 'Merienda One', cursive;
   color: #ead4b2;
+  margin-top: 25px;
 }
 
 .schools li {
@@ -151,14 +161,37 @@ h2:before {
 
 @media(min-width: 768px) {
   .self_info{
-    width: 450px;
-    transform: translate(-11%, 8% );
-    padding: 25px 30px 25px 60px;
-    font-size: 17px;
+    width: 500px;
+    border-radius: 0;
+    background: transparent;
+    padding: 67px 35px 5px 15px;
+    font-size: 20px;
+  }
+
+
+  .self_info:after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 44px;
+    width: 540px;
+    height: 280px;
+    background-color: #464646;
+    border-radius: 6px;
+    z-index: -1;
+
   }
 
   .exp_item {
     margin-bottom: 0;
+  }
+
+  .exp_item:first-of-type {
+    margin-top: 10px;
+  }
+
+  .exp_item:last-of-type {
+    margin-bottom: 25px;
   }
 
   .separator {
@@ -175,13 +208,14 @@ h2:before {
   }
 
   .avatar img {
-    height: 240px;
-    width: 210px;
+    height: 280px;
+    width: 240px;
     object-fit: cover;
   }
 
-  .job-description-right, .job-description-left {
+  .exp_item div[class^="job-description"] {
     width: 35vw;
+    padding: 12px 15px;
   }
 
   .period {
@@ -211,5 +245,4 @@ h2:before {
     width: 0;
     height: 0;
   }
-
 }

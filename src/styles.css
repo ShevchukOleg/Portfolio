@@ -83,6 +83,14 @@ div.full_width div.owl-carousel div.owl-nav button[type='button']:hover {
   background: #080807;
 }
 
+div.full_width div.owl-carousel div.owl-nav button[type='button']:active {
+  background: #2b2b24;
+}
+
+div.full_width div.owl-carousel div.owl-nav button[type='button']:focus {
+  outline-color: transparent;
+}
+
 div.full_width div.owl-carousel div.owl-dots {
   position: absolute;
   top: -28px;

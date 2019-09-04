@@ -1,20 +1,24 @@
 .skills_styler {
   background-color: #313131;
-  /* height: calc(100vh - 163px); */
   height: 530px;
-  overflow: hidden;
+  padding: 15px 5px 10px;
+}
+
+.full_width {
+  padding-top: 10px;
 }
 
 .skills_styler h2 {
   color: #daa34a;
   text-align: center;
-  margin: 45px 0 35px;
+  margin: 5px 0 70px;
 }
 
 .image-wrapper {
   overflow: hidden;
   height: 380px;
 }
+
 .image-wrapper img {
   display: block;
   border-radius: 5px;
@@ -72,10 +76,6 @@
   text-align: center;
 }
 
-.full_width {
-  padding-top: 10px;
-}
-
 div.full_width div.owl-carousel div.owl-nav {
   position: absolute;
   top: 15px;
@@ -85,11 +85,13 @@ div.full_width div.owl-carousel div.owl-nav {
 
 @media (min-width: 768px) {
   .full_width {
-    margin-top: 5vh;
+    margin: 0 0 5vh;
     padding-top: 25px;
   }
 
   .skills_styler {
-    height: calc(100vh - 177px);
+    height: auto;
+    min-height: calc(100vh - 177px);
+    padding: 10px 10px 30px;
   }
 }
