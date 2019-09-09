@@ -215,11 +215,13 @@ div[class^="job-description"] li {
 
   .exp_item div[class^="job-description"] {
     width: 35vw;
+    max-width: 530px;
     padding: 12px 15px;
   }
 
   .period {
     width: 35vw;
+    max-width: 530px;
   }
 
   .job-description-left:before {
