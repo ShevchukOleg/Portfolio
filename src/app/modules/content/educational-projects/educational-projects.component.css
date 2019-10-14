@@ -50,6 +50,7 @@
 
 .overlay ul {
   margin-bottom: 0;
+  padding: 5px 15px;
 }
 
 .overlay li {
@@ -70,7 +71,7 @@
 
 .text {
   font-family: 'Merienda One', cursive;
-  margin-top: 10px;
+  margin: 10px 0 0;
   color: #ead4b2;
   font-size: 20px;
   text-align: center;
@@ -91,7 +92,11 @@ div.full_width div.owl-carousel div.owl-nav {
 
   .skills_styler {
     height: auto;
-    min-height: calc(100vh - 177px);
+    min-height: calc(100vh - 161px);
     padding: 10px 10px 30px;
+  }
+
+  .overlay ul {
+    padding: 5px 5px;
   }
 }

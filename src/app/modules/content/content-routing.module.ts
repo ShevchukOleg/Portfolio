@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'projects', component: EducationalProjectsComponent, data: {animation: 'second'} },
   {path: 'personality', component: PersonalQualitiesComponent, data: {animation: 'first'} },
   {path: '', redirectTo: 'skills', pathMatch: 'full', data: {animation: 'first'} }
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
