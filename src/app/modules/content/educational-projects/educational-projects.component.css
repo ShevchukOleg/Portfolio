@@ -9,9 +9,10 @@
 }
 
 .skills_styler h2 {
+  padding-top: 15px;
   color: #daa34a;
   text-align: center;
-  margin: 5px 0 70px;
+  margin: 15px 0 40px;
 }
 
 .image-wrapper {
@@ -86,14 +87,14 @@ div.full_width div.owl-carousel div.owl-nav {
 
 @media (min-width: 768px) {
   .full_width {
-    margin: 0 0 5vh;
-    padding-top: 25px;
+    margin: 0 0 1vh;
+    padding-top: 15px;
   }
 
   .skills_styler {
     height: auto;
     min-height: calc(100vh - 161px);
-    padding: 10px 10px 30px;
+    padding: 10px;
   }
 
   .overlay ul {
