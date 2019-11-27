@@ -1,40 +1,6 @@
 <header>
-  <!-- <div class="headerInner">
-    <div class="my-3">
-        <h1 class="text-center">Shevchuk Oleg</h1>
-        <p class="merienda text-center mt-3 mb-0">Junior front-end developer</p>
-    </div>
-    <nav class="my-auto mx-auto">
-      <div class="toggle-button" (click)="navigationChange()" [ngClass]="{'tb-active': status}">
-          <span class="toggle-button-element"></span>
-          <span class="toggle-button-element"></span>
-          <span class="toggle-button-element"></span>
-      </div>
-      <ul class="main_navigation flex-column flex-md-row mx-3  align-items-center" [ngClass]="{'d-flex': status}">
-        <li class="ml-3"><a routerLink="/content/skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a></li>
-        <li class="ml-3"><a routerLink="/content/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
-        <li class="ml-3"><a routerLink="/content/personality" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Personality</a></li>
-      </ul>
-    </nav>
-    <div class="personalInfo">
-        <ul>
-          <li>
-            <a class="simpleLink" href="w.shevchuk.o@gmail.com">w.shevchuk.o@gmail.com</a>
-          </li>
-          <li class="text-center"><a href="https://github.com/ShevchukOleg" ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-          <li class="telNumber">
-            +38(096)544-88-36
-          </li>
-        </ul>
-    </div>
-  </div> -->
-
-
-
-
   <div class="container">
     <div class="row flex-column flex-lg-row align-items-center">
-
       <div class="col-lg-2 col-8 pt-2 text-lg-right text-center">
         <h2 class="name">Shevchuk Oleg</h2>
         <span>junior-web-developer</span>
@@ -46,16 +12,37 @@
 
       <div class="col-5 mb-lg-3">
         <nav>
-            <div class="toggle-button" (click)="navigationChange()" [ngClass]="{'tb-active': status}">
-                <span class="toggle-button-element"></span>
-                <span class="toggle-button-element"></span>
-                <span class="toggle-button-element"></span>
-            </div>
-          <ul class="main_navigation flex-column flex-md-row mx-auto mt-2 border-bottom justify-content-between align-items-center" [ngClass]="{'d-flex': status}">
-            <li><a routerLink="/content/skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Skills</a></li>
-            <li><a routerLink="/content/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
-            <li><a routerLink="/content/personality" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About me</a></li>
-            <li><a href="https://github.com/ShevchukOleg" >My Git <i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <div class="toggle-button" (click)="navigationChange()" [ngClass]="{'tb-active': status}">
+            <span class="toggle-button-element"></span>
+            <span class="toggle-button-element"></span>
+            <span class="toggle-button-element"></span>
+          </div>
+          <ul
+            class="main_navigation flex-column flex-md-row mx-auto mt-2 border-bottom justify-content-between align-items-center"
+            [ngClass]="{'d-flex': status}">
+            <li>
+              <a routerLink="/content/skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a routerLink="/content/projects" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a routerLink="/content/personality" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                About me
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ShevchukOleg">
+                My Git
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
