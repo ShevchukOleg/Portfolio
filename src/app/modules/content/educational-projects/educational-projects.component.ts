@@ -17,6 +17,7 @@ export class EducationalProjectsComponent implements OnInit {
         items: 3,
         loop: true,
         center: true,
+        margin: 15,
         nav: true,
         navText: ['&larr;', '&rarr;'],
         autoplay: true,

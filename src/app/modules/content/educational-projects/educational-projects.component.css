@@ -65,6 +65,15 @@
   margin-top: 10px;
   color: #5ddacf;
 }
+.overlay a.git-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.overlay a.git-link i {
+ font-size: 28px;
+}
 
 .image-wrapper:hover .overlay {
   opacity: 10;

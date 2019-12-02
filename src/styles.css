@@ -45,20 +45,28 @@ article {
   position: relative;
 }
 
-.nextChapter:hover a:after {
-  transition: 0.4s;
-  margin-left: 10px;
-  content: "\21D2";
-}
-
 .nextChapter a {
   color: #daa34a;
 }
 
+.nextChapter a:after {
+  transition: 0.2s;
+  margin-left: 10px;
+  content: "\21D2";
+  opacity: 0;
+}
+
+.nextChapter:hover a:after {
+  opacity: 1;
+}
+
+
+
 .nextChapter a:hover {
-  transition: 0.4s;
+  transition: 0.3s;
   color: #ffc353;
   text-decoration: none;
+  font-weight: bold;
 
 }
 
