@@ -7,7 +7,7 @@
                 <form class="security-form" [formGroup]="passwordForm" (ngSubmit)="getAccess()">
                     <p>Please, enter code, permited in CV:</p>
                     <mat-form-field class="w-100">
-                      <input matInput placeholder="password" formControlName="password" [errorStateMatcher]="matcher">
+                      <input matInput placeholder="password" type="password" formControlName="password" [errorStateMatcher]="matcher">
                       <mat-error *ngIf="passwordForm.get('password').errors?.minlength && !passwordForm.get('password').errors?.required">
                           Please enter a valid password
                       </mat-error>
