@@ -1,0 +1,4 @@
+.mainPart {
+  min-height: calc(100vh - 161px);
+  background-color: #313131;
+}
