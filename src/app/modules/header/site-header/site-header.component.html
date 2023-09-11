@@ -6,34 +6,51 @@
         <span>junior-web-developer</span>
       </div>
 
-      <div class="col-lg-5 col-8 mt-2 mt-lg-5 mb-lg-3 d-flex justify-content-center">
+      <div
+        class="col-lg-5 col-8 mt-2 mt-lg-5 mb-lg-3 d-flex justify-content-center"
+      >
         <h1 class="mr-lg-auto">portfolio</h1>
       </div>
 
       <div class="col-5 mb-lg-3">
         <nav>
-          <div class="toggle-button" (click)="navigationChange()" [ngClass]="{'tb-active': status}">
+          <div
+            class="toggle-button"
+            (click)="navigationChange()"
+            [ngClass]="{ 'tb-active': status }"
+          >
             <span class="toggle-button-element"></span>
             <span class="toggle-button-element"></span>
             <span class="toggle-button-element"></span>
           </div>
           <ul
             class="main_navigation flex-column flex-md-row mx-auto mt-2 border-bottom justify-content-between align-items-center"
-            [ngClass]="{'d-flex': status}">
+            [ngClass]="{ 'd-flex': status }"
+          >
             <li>
-              <a routerLink="/content/skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <a
+                routerLink="/skills"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
                 Skills
               </a>
             </li>
             <li>
-              <a routerLink="/content/projects" routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}">
+              <a
+                routerLink="/projects"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a routerLink="/content/personality" routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}">
+              <a
+                routerLink="/personality"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
                 About me
               </a>
             </li>
